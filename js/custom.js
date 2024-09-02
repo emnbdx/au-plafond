@@ -62,43 +62,4 @@
     });     
     /*End Back To Top Button*/
 
-    /*Testimonials Section of hp-1*/
-    $('#testimonials-hp-1').owlCarousel({
-        items:1,
-        loop:true,
-        margin: 0,
-        nav:true,
-        navText: [ 
-            "<span class='lnr lnr-chevron-left'></span>",
-            "<span class='lnr lnr-chevron-right'></span>"],
-        slideSpeed: 300,
-        panigationSpeed: 400,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:false
-            },
-            576:{
-                items:1
-                
-            },
-            992:{
-                items:1
-            }
-        }
-    });
-
-    /*Owl Carousel Image Thumbnails hp-5*/
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-        loop: false,
-        items: 1,
-        thumbs: true,
-        thumbImage: true,
-        thumbContainerClass: 'owl-thumbs',
-        thumbItemClass: 'owl-thumb-item'
-    });
-    /*End Owl Carousel Image Thumbnails hp-5*/
-
 })(jQuery);

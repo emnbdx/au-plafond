@@ -44,7 +44,7 @@
             $this->MAIL_LOGIN = "librairie@au-plfond.fr";
             $this->MAIL_PASSWORD = $_ENV['MAIL_PASSWORD'];
             
-            $this->ADMIN_USER = "admin-au-plafond";
+            $this->ADMIN_USER = $_ENV['ADMIN_USER'];
             $this->ADMIN_PASSWORD = $_ENV['ADMIN_PASSWORD'];
         }
 

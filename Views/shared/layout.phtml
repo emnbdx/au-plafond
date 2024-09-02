@@ -49,30 +49,29 @@
 						</div>
 						<!-- Main Menu -->
 						<nav class="main-menu">
-
 							<ul>
 								<li class="menu-item">
-									<a href="/" class="<?php echo $view == "index" ? "current" : "" ?>">
+									<a href="/" class="<?php echo $_SERVER['REQUEST_URI'] == "/" ? "current" : "" ?>">
 										Accueil
 									</a>
 								</li>
 								<li class="menu-item">
-									<a href="/librairie" class="<?php echo $view == "librairie" ? "current" : "" ?>">
+									<a href="/librairie" class="<?php echo $_SERVER['REQUEST_URI'] == "/librairie" ? "current" : "" ?>">
 										Librairie
 									</a>
 								</li>
 								<li class="menu-item">
-									<a href="/atelier" class="<?php echo $view == "atelier" ? "current" : "" ?>">
+									<a href="/atelier" class="<?php echo $_SERVER['REQUEST_URI'] == "/atelier" ? "current" : "" ?>">
 										Atelier
 									</a>
 								</li>
 								<li class="menu-item">
-									<a href="/qui-sommes-nous" class="<?php echo $view == "whoweare" ? "current" : "" ?>">
+									<a href="/qui-sommes-nous" class="<?php echo $_SERVER['REQUEST_URI'] == "/qui-sommes-nous" ? "current" : "" ?>">
 										Qui sommes-nous ?
 									</a>
 								</li>
 								<li class="menu-item">
-									<a href="/contact" class="<?php echo $view == "contact" ? "current" : "" ?>">
+									<a href="/contact" class="<?php echo $_SERVER['REQUEST_URI'] == "/contact" ? "current" : "" ?>">
 										Contact
 									</a>
 								</li>
@@ -152,7 +151,7 @@
 							</div>
 							<div class="contact">
 								<i class="zmdi zmdi-email"></i>
-								<span><a href="mailto:contact@ellestmanuelle.fr" target="_blank">contact@ellestmanuelle.fr</a></span>
+								<span><a href="mailto:librairie@au-plafond.fr" target="_blank">librairie@au-plafond.fr</a></span>
 							</div>
 							<div class="contact">
 								<i class="zmdi zmdi-globe"></i>
@@ -186,12 +185,6 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<!-- Owl Carousel 2 -->
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/OwlCarousel2Thumbs.min.js"></script>
-	<!-- fancybox Library -->
-	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-	<!-- Form -->
 	<script src="js/sweetalert.min.js"></script>
 	<script src="js/config-contact.js"></script>
 	<!-- Main Js -->
