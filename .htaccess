@@ -1,0 +1,26 @@
+# Turn on rewrite engine
+RewriteEngine On
+
+# Block access to the .env file
+RewriteCond %{REQUEST_URI} ^/.env
+RewriteRule ^ - [F]
+
+# Block access to the .env file
+RewriteCond %{REQUEST_URI} ^/Config.php$
+RewriteRule ^ - [F]
+
+# Block access to specific code directories
+RewriteCond %{REQUEST_URI} ^/(Controllers|Repositories|vendor|Views)/
+RewriteRule ^ - [F]
+
+# Disable directory listings
+Options -Indexes
+
+# BEGIN WordPress
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+# END WordPress

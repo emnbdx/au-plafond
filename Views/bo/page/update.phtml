@@ -1,0 +1,35 @@
+<div class="card">
+	<div class="card-header">
+		<i class="fa fa-fw fa-plus-circle"></i> <strong>Edition</strong>
+		<a href="/admin/pages" class="float-right btn btn-dark btn-sm"><i class="fa fa-arrow-circle-left"></i> Retour</a>
+	</div>
+	<div class="card-body">
+		<div class="col-12">
+			<form method="post" enctype="multipart/form-data">
+				<div class="form-group">
+					<label>Nom</label>
+					<input type="text" name="name" id="name" class="form-control" value="<?php echo $data['name']; ?>" required disabled>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<div class="form-group">
+							<label>Content <span class="text-danger">*</span></label>
+							<textarea name="content" id="content" class="form-control" required><?php echo $data['content']; ?></textarea>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="form-group">
+							<label>Aperçu <span class="text-danger">*</span></label>
+							<br />
+							<iframe src="" id="preview"></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="hidden" name="editId" id="editId" value="<?php echo $data['id'] ?>">
+					<button type="submit" name="submit" value="submit" id="submit" class="btn btn-primary"><i class="fa fa-fw fa-edit"></i> Mettre à jour</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

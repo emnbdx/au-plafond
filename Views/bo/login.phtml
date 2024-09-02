@@ -1,0 +1,18 @@
+<div class="container">
+    <form method="POST">
+        <div class="mb-3">
+            <label for="login" class="form-label">Login</label>
+            <input type="text" class="form-control" id="login" name="login">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Mot de passe</label>
+            <input type="password" class="form-control" id="password" name="password">
+        </div>
+        <?php if(isset($data)) { ?>
+            <div id="invalidCheck3Feedback" class="invalid-feedback">
+                <?php echo $data ?>
+            </div>
+        <?php } ?>
+        <button type="submit" name="submit" value="submit" class="btn btn-primary">Connexion</button>
+    </form>
+</div>

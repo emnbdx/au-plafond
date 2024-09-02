@@ -1,0 +1,39 @@
+<div class="card">
+	<div class="card-header">
+		<i class="fa fa-fw fa-globe"></i><strong>Liste des pages</strong>
+		<a href="/admin" class="float-right btn btn-dark btn-sm"><i class="fa fa-arrow-circle-left"></i> Retour</a>
+	</div>
+</div>
+
+<div>
+	<table class="table table-striped table-bordered">
+		<thead>
+			<tr class="bg-primary text-white">
+				<th>Id</th>
+				<th>Nom</th>
+				<th class="text-center">Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			<?php
+			if (count($data) > 0) {
+				foreach ($data as $page) {
+			?>
+					<tr>
+						<td><?php echo $page['id']; ?></td>
+						<td><?php echo $page['name']; ?></td>
+						<td align="center">
+							<a href="/admin/page/<?php echo $page['id']; ?>/update" class="text-primary"><i class="fa fa-fw fa-edit"></i> Edition</a>
+						</td>
+					</tr>
+				<?php
+				}
+			} else {
+				?>
+				<tr>
+					<td colspan="6" align="center">Rien à afficher !</td>
+				</tr>
+			<?php } ?>
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title><?php echo $title ?></title>
+	<meta name="description" content="créations artistiques et artisanales / illustrations / interventions ateliers">
+	<!-- Mobile Specific Metas
+  	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Favicon
+  	================================================== -->
+	<!-- <link rel="shortcut icon" href="favicon.png" /> -->
+	<!-- Font
+  ================================================== -->
+	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/linearicons/style.css">
+	<link rel="stylesheet" type="text/css" href="css/poppins-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/Playlist/playlist-script-font.css">
+	<!-- CSS   
+  ================================================== -->
+	<!-- Bootrap -->
+	<!-- <link rel="stylesheet" href="vendor/bootrap/css/bootstrap.min.css"/> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- Owl Carousel 2 -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- fancybox Library -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<!-- Main Style Css -->
+	<link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+	<header class="header">
+		<!-- Show Desktop Header -->
+		<div class="show-desktop-header header-hp-1 style-header-hp-1">
+			<div id="js-navbar-fixed" class="menu-desktop">
+				<div class="container-fluid">
+					<div class="menu-desktop-inner">
+						<!-- Logo -->
+						<div class="logo">
+							<a href="/">
+								<img src="/images/logo.png" />
+							</a>
+						</div>
+						<!-- Main Menu -->
+						<nav class="main-menu">
+
+							<ul>
+								<li class="menu-item">
+									<a href="/" class="<?php echo $view == "index" ? "current" : "" ?>">
+										Accueil
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="/librairie" class="<?php echo $view == "librairie" ? "current" : "" ?>">
+										Librairie
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="/atelier" class="<?php echo $view == "atelier" ? "current" : "" ?>">
+										Atelier
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="/qui-sommes-nous" class="<?php echo $view == "whoweare" ? "current" : "" ?>">
+										Qui sommes-nous ?
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="/contact" class="<?php echo $view == "contact" ? "current" : "" ?>">
+										Contact
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Show Mobile Header -->
+		<div id="js-navbar-mb-fixed" class="show-mobile-header">
+			<!-- Logo And Hamburger Button -->
+			<div class="mobile-top-header">
+				<div class="logo-mobile">
+					<a href="/">
+					<img src="/images/logo.png" />
+					</a>
+				</div>
+				<button class="hamburger hamburger--spin hidden-tablet-landscape-up" id="toggle-icon">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</div>
+			<!-- Au Navbar Menu -->
+			<div class="au-navbar-mobile navbar-mobile-1">
+				<div class="au-navbar-menu">
+					<ul>
+						<li class="drop">
+							<a class="drop-link" href="/">
+								Accueil
+							</a>
+						</li>
+						<li class="drop">
+							<a class="drop-link" href="/librairie">
+								Librairie
+							</a>
+						</li>
+						<li class="drop">
+							<a class="drop-link" href="/atelier">
+								Atelier
+							</a>
+						</li>
+						<li class="drop">
+							<a class="drop-link" href="/qui-sommes-nous">
+								Qui sommes-nous ?
+							</a>
+						</li>
+						<li class="drop">
+							<a class="drop-link" href="/contact">
+								Contact
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<?php
+	if ($type == 'view')
+		require $content;
+	else
+		echo $data;
+	?>
+
+	<footer class="footer-section section-box">
+		<div class="footer-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="footer-items footer-items-1">
+							<h4>Contact</h4>
+							<div class="contact">
+								<i class="zmdi zmdi-map"></i>
+								<span>46300 Gourdon</span>
+							</div>
+							<div class="contact">
+								<i class="zmdi zmdi-email"></i>
+								<span><a href="mailto:contact@ellestmanuelle.fr" target="_blank">contact@ellestmanuelle.fr</a></span>
+							</div>
+							<div class="contact">
+								<i class="zmdi zmdi-globe"></i>
+								<span><a href="https://www.au-plafond.fr" target="_blank">www.au-plafond.fr</a></span>
+							</div>
+							<div class="contact">
+								<i class="zmdi zmdi-facebook"></i>
+								<span><a href="https://www.facebook.com/au-plafond/" target="_blank">facebook.com/au-plafond</a></span>
+							</div>
+							<div class="contact">
+								<i class="zmdi zmdi-instagram"></i>
+								<span><a href="https://www.instagram.com/au-plafond/" target="_blank">instagram/au-plafond</a></span>
+							</div>
+							<div class="contact">
+								<i class="zmdi zmdi-linkedin"></i>
+								<span><a href="https://www.linkedin.com/in/au-plafond/" target="_blank">linkedin.com/in/au-plafond</a></span>
+							</div>
+							<div class="copyright">
+								© 2024 <?php echo date("Y") > 2024 ? "- " . date("Y") : ""  ?> by <a href="https://www.eddymontus.fr" target="_blank">Eddy MONTUS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<a href="#" id="back-to-top" style="display: none;"></a>
+
+	<!--  JS  -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<!-- Owl Carousel 2 -->
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/OwlCarousel2Thumbs.min.js"></script>
+	<!-- fancybox Library -->
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<!-- Form -->
+	<script src="js/sweetalert.min.js"></script>
+	<script src="js/config-contact.js"></script>
+	<!-- Main Js -->
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
