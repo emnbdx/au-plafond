@@ -127,7 +127,7 @@ header ul {
 }
 
 .page-content {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 @media (max-width: 1199px) {
@@ -3662,7 +3662,7 @@ textarea:-moz-placeholder {
   color: #333;
 }
 .contact-section .contact-content .contact-details img {
-  width: 50%;
+  width: 75%;
 }
 
 /* End Contact Section */
