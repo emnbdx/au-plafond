@@ -24,7 +24,6 @@
 	$router = new AltoRouter();
 
 	$repository = new Repositories\Repository();
-	$contactController = new Controllers\ContactController();
 	$staticController = new Controllers\StaticController($repository);
 
 	$adminRepository = new Repositories\AdminRepository();
@@ -37,8 +36,6 @@
     $router->map('GET', '/librairie', 'StaticController#librairie');
     $router->map('GET', '/atelier', 'StaticController#atelier');
     $router->map('GET', '/qui-sommes-nous', 'StaticController#whoweare');
-    $router->map('GET', '/contact', 'ContactController#index');
-    $router->map('POST', '/contact', 'ContactController#send');
 
 	// bo route
 	$router->map('GET', '/admin/login', 'AdminController#login');
@@ -64,8 +61,6 @@
         $bo = false;
 		if($controller == "StaticController") {
 			$ctrl = $staticController;
-		} else if ($controller == "ContactController") {
-			$ctrl = $contactController;
 		} else if ($controller == "AdminController") {
             $bo = true;
 			$ctrl = $adminController;
@@ -116,9 +111,6 @@
                 break;
             case 'qui-sommes-nous' :
                 $title .= "Qui sommes-nous ?";
-                break;
-            case 'contact' :
-                $title .= "Contact";
                 break;
             default :
                 $title .= "404";

@@ -6,16 +6,24 @@
 	================================================== -->
 	<meta charset="utf-8">
 	<title><?php echo $title ?></title>
-	<meta name="description" content="créations artistiques et artisanales / illustrations / interventions ateliers">
+	<meta name="description"
+		content="Changez de point de vue, et si vous alliez faire un tour Au plafond. La promenade vous sera profitable. Au plafond est la nouvelle librairie de Nérac où vous trouverez romans et albums, livres pour les grands et les petits, collections à dévorer ou bien à collectionner, mangas et bandes dessinées du monde entier… bref : des livres, des livres, des livres…">
 	<!-- Mobile Specific Metas
-  	================================================== -->
+	  ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:url"
+		content="<?php echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>" />
+	<meta property="og:title" content="<?php echo $title ?>" />
+	<meta property="og:description"
+		content="Changez de point de vue, et si vous alliez faire un tour Au plafond. La promenade vous sera profitable. Au plafond est la nouvelle librairie de Nérac où vous trouverez romans et albums, livres pour les grands et les petits, collections à dévorer ou bien à collectionner, mangas et bandes dessinées du monde entier… bref : des livres, des livres, des livres…" />
 	<!-- Favicon
-  	================================================== -->
+	  ================================================== -->
 	<!-- <link rel="shortcut icon" href="favicon.png" /> -->
 	<!-- Font
   ================================================== -->
-	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
 	<link rel="stylesheet" type="text/css" href="fonts/linearicons/style.css">
 	<link rel="stylesheet" type="text/css" href="css/poppins-font.css">
 	<link rel="stylesheet" type="text/css" href="fonts/Playlist/playlist-script-font.css">
@@ -23,7 +31,8 @@
   ================================================== -->
 	<!-- Bootrap -->
 	<!-- <link rel="stylesheet" href="vendor/bootrap/css/bootstrap.min.css"/> -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<!-- Owl Carousel 2 -->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -56,23 +65,21 @@
 									</a>
 								</li>
 								<li class="menu-item">
-									<a href="/librairie" class="<?php echo $_SERVER['REQUEST_URI'] == "/librairie" ? "current" : "" ?>">
+									<a href="/librairie"
+										class="<?php echo $_SERVER['REQUEST_URI'] == "/librairie" ? "current" : "" ?>">
 										Librairie
 									</a>
 								</li>
 								<li class="menu-item">
-									<a href="/atelier" class="<?php echo $_SERVER['REQUEST_URI'] == "/atelier" ? "current" : "" ?>">
+									<a href="/atelier"
+										class="<?php echo $_SERVER['REQUEST_URI'] == "/atelier" ? "current" : "" ?>">
 										Atelier
 									</a>
 								</li>
 								<li class="menu-item">
-									<a href="/qui-sommes-nous" class="<?php echo $_SERVER['REQUEST_URI'] == "/qui-sommes-nous" ? "current" : "" ?>">
+									<a href="/qui-sommes-nous"
+										class="<?php echo $_SERVER['REQUEST_URI'] == "/qui-sommes-nous" ? "current" : "" ?>">
 										Qui sommes-nous ?
-									</a>
-								</li>
-								<li class="menu-item">
-									<a href="/contact" class="<?php echo $_SERVER['REQUEST_URI'] == "/contact" ? "current" : "" ?>">
-										Contact
 									</a>
 								</li>
 							</ul>
@@ -87,7 +94,7 @@
 			<div class="mobile-top-header">
 				<div class="logo-mobile">
 					<a href="/">
-					<img src="/images/uploads/logo palier plafond Nérac.jpg" width="150" />
+						<img src="/images/uploads/logo palier plafond Nérac.jpg" width="150" />
 					</a>
 				</div>
 				<button class="hamburger hamburger--spin hidden-tablet-landscape-up" id="toggle-icon">
@@ -120,11 +127,6 @@
 								Qui sommes-nous ?
 							</a>
 						</li>
-						<li class="drop">
-							<a class="drop-link" href="/contact">
-								Contact
-							</a>
-						</li>
 					</ul>
 				</div>
 			</div>
@@ -154,7 +156,8 @@
 								<span>
 									<a href="mailto:librairie@au-plafond.fr" target="_blank">librairie@au-plafond.fr</a>
 									&nbsp;/&nbsp;
-									<a href="mailto:contact@ellestmanuelle.fr" target="_blank">contact@ellestmanuelle.fr</a>
+									<a href="mailto:contact@ellestmanuelle.fr"
+										target="_blank">contact@ellestmanuelle.fr</a>
 								</span>
 							</div>
 							<div class="contact">
@@ -171,18 +174,22 @@
 							</div>
 							<div class="contact">
 								<i class="zmdi zmdi-facebook"></i>
-								<span><a href="https://www.facebook.com/Ellestmanuelle/" target="_blank">facebook.com/Ellestmanuelle</a></span>
+								<span><a href="https://www.facebook.com/Ellestmanuelle/"
+										target="_blank">facebook.com/Ellestmanuelle</a></span>
 							</div>
 							<div class="contact">
 								<i class="zmdi zmdi-instagram"></i>
-								<span><a href="https://www.instagram.com/ellestmanuelle/" target="_blank">instagram/ellestmanuelle</a></span>
+								<span><a href="https://www.instagram.com/ellestmanuelle/"
+										target="_blank">instagram/ellestmanuelle</a></span>
 							</div>
 							<div class="contact">
 								<i class="zmdi zmdi-linkedin"></i>
-								<span><a href="https://www.linkedin.com/in/emmanuelle-enfrin/" target="_blank">linkedin.com/in/emmanuelle-enfrin</a></span>
+								<span><a href="https://www.linkedin.com/in/emmanuelle-enfrin/"
+										target="_blank">linkedin.com/in/emmanuelle-enfrin</a></span>
 							</div>
 							<div class="copyright">
-								© 2024 <?php echo date("Y") > 2024 ? "- " . date("Y") : ""  ?> by <a href="https://www.eddymontus.fr" target="_blank">Eddy MONTUS</a>
+								© 2024 <?php echo date("Y") > 2024 ? "- " . date("Y") : "" ?> by <a
+									href="https://www.eddymontus.fr" target="_blank">Eddy MONTUS</a>
 							</div>
 						</div>
 					</div>
@@ -194,11 +201,15 @@
 	<a href="#" id="back-to-top" style="display: none;"></a>
 
 	<!--  JS  -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
 	<script src="js/sweetalert.min.js"></script>
-	<script src="js/config-contact.js"></script>
 	<!-- Main Js -->
 	<script src="js/custom.js"></script>
 
@@ -208,12 +219,12 @@
 		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
 		_paq.push(['trackPageView']);
 		_paq.push(['enableLinkTracking']);
-		(function() {
-			var u="https://matomo.madietenligne.fr/";
-			_paq.push(['setTrackerUrl', u+'matomo.php']);
+		(function () {
+			var u = "https://matomo.madietenligne.fr/";
+			_paq.push(['setTrackerUrl', u + 'matomo.php']);
 			_paq.push(['setSiteId', '2']);
-			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-			g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+			var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+			g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
 		})();
 	</script>
 	<!-- End Matomo Code -->
